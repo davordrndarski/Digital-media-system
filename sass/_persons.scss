@@ -1,0 +1,214 @@
+.persons {
+	background: $main-background;
+	padding: 40px 0;
+
+}
+
+.box {
+	width: 100%;
+	text-align: center;
+	padding-left: 20px;
+	position: relative;
+	margin-bottom: 20px;
+	min-height: 384px;}
+@media only screen and (min-width: 768px) {
+.box {
+	width: 50%;}	
+}	
+
+@media only screen and (min-width: 992px) {
+.box {
+	width: 33.3333%;}	
+}	
+
+
+
+.person {
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(102,99,102,1);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(102,99,102,1);
+	box-shadow: 0px 2px 5px 0px rgba(102,99,102,1);
+	border-radius: 7px;
+	overflow: hidden;
+	img {
+		border: 5px solid #fff;
+		border-radius: 100%;
+	}
+
+}
+
+
+.last {
+	border: 5px solid #eaeaea !important;
+	
+}
+
+.center_img {
+	position: relative;
+	display: inline-block;
+}
+
+.center_img a {
+	transition: all 0.5s !important;
+}
+
+.center_img::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 100%;
+	background:url("../img/09h.jpg"); 
+	border: 5px solid #eaeaea !important;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	max-width: 100%;
+}
+
+.center_img:hover::before {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s !important;
+}
+
+
+.background1 {
+	background:url("../img/b1.jpg"); 
+	background-size: 100% 87%;
+	position: relative;
+	
+}
+
+.background2 {
+	background:url("../img/b2.jpg"); 
+	background-size: 100% 87%;
+	position: relative;
+	
+}
+
+.background3 {
+	background:url("../img/b3.jpg"); 
+	background-size: 100% 87%;
+	position: relative;
+	
+}
+
+.background4 {
+	background:url("../img/b4.jpg"); 
+	background-size: 100% 87%;
+	position: relative;
+	
+}
+
+
+.background5 {
+	background:url("../img/b5.jpg"); 
+	background-size: 100% 87%;
+	position: relative;
+	
+}
+
+.background6 {
+	background:url("../img/b6.jpg"); 
+	background-size: 100% 87%;
+	position: relative;
+	
+}
+
+.background7 {
+	background:url("../img/b7.jpg"); 
+	background-size: 100% 87%;
+	position: relative;
+	
+}
+
+.background8 {
+	background:url("../img/b8.jpg"); 
+	background-size: 100% 87%;
+	position: relative;
+
+}
+
+
+.background9 {
+	background: #fff;
+
+}
+.center {
+	min-height: 384px;
+	padding: 100px 0px;
+}
+
+
+
+.name {
+	font-family: 'ProximaNova_Reg';
+	 font-size: 28px;
+	 color: #fff;
+	 padding: 20px 0;
+	 margin: 0 5px 30px;
+	 border-bottom: 1px solid $text-color;
+}
+
+
+.address {
+	font-family: 'ProximaNova_Reg';
+	color: $text-color;
+	font-size: 18px;
+	opacity: 0.7;
+}
+
+.person_contact {
+	background: $text-color;
+	padding: 17px 0;
+	position: relative;
+	
+
+
+}
+
+.person_button {
+	font-family: 'ProximaNova_Reg';
+	position: relative;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 4px 15px 3px 30px;
+	border-radius: 15px;
+	margin: 0 10px;
+
+}
+
+.edit {
+	background: $edit;
+}
+
+.edit::before {
+	content: "";
+	background: url("../img/pen.png");
+	width: 15px;
+	height: 15px;
+	background-size: 100%;
+	position: absolute;
+	left: 8px;
+	top: 5px;
+}
+
+.view {
+	background: $view;
+}
+
+.view::before {
+	content: "";
+	background: url("../img/eye.png");
+	width: 17px;
+	height: 12px;
+	background-size: 100%;
+	position: absolute;
+	left: 0;
+	left: 8px;
+	top: 7px;
+}
